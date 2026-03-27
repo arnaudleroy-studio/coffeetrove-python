@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "coffeetrove"
+version = "0.1.0"
+description = "Python SDK for CoffeeTrove — explore 440K cafes, coffee origins, brewing methods, and specialty coffee data worldwide."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.9"
+authors = [
+    {name = "CoffeeTrove", email = "dropthehq@gmail.com"},
+]
+keywords = ["coffee", "cafes", "specialty-coffee", "brewing", "data", "coffeetrove", "dataset", "api"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Topic :: Database",
+]
+dependencies = [
+    "httpx>=0.24.0",
+]
+
+[project.optional-dependencies]
+pandas = ["pandas>=1.5.0"]
+all = ["pandas>=1.5.0"]
+
+[project.urls]
+Homepage = "https://coffeetrove.com"
+Documentation = "https://coffeetrove.com/about"
+Repository = "https://github.com/arnaudleroy-studio/coffeetrove-python"
+"Coffee Knowledge" = "https://coffeetrove.com/knowledge"
+"Brewing Guides" = "https://coffeetrove.com/knowledge/brewing-guides"
+"Bug Tracker" = "https://github.com/arnaudleroy-studio/coffeetrove-python/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
