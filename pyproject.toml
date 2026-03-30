@@ -36,7 +36,7 @@ all = ["pandas>=1.5.0"]
 
 [project.urls]
 Homepage = "https://coffeetrove.com"
-Documentation = "https://coffeetrove.com/about"
+Documentation = "https://coffeetrove.readthedocs.io/"
 Repository = "https://github.com/arnaudleroy-studio/coffeetrove-python"
 "Coffee Knowledge" = "https://coffeetrove.com/knowledge"
 "Brewing Guides" = "https://coffeetrove.com/knowledge/brewing-guides"
